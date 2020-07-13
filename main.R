@@ -5,19 +5,22 @@
 #' Available at: 
 #'
 #' - Description:
-#' This R script was used to generate the results presented on paper. 
-#' Details of the methodology are implemented in SITS package.
+#'  This R script was used to generate the results presented on paper. 
+#'  Details of the methodology are implemented in SITS package.
 #'
 #' - Reference paper:
-#' Lorena Santos, Karine Ferreira, Gilberto Camara, Michelle Picolli, Rolf Simoes.
-#' Quality control and class noise reduction of satellite
-#' image time series
-#' Originally submitted to Remote sensing of environment
-#'
-#' - Script Usage:
-#' Before run this script, open it on any editor or R IDE (e.g. RStudio) to
-#' inform the input parameters, in the section `Input Params`.
-#' To install the required packages, see section `Installation` below.
+#'  Lorena Santos, Karine Ferreira, Gilberto Camara, Michelle Picolli, Rolf Simoes.
+#'  Quality control and class noise reduction of satellite
+#'  image time series
+#'  Originally submitted to Remote sensing of environment
+#' 
+#' - Usage Code
+#'  The SOM algorithm implemented in sits package use the Kohonen package.
+#'  The weight neurons are random initialized, therefore, the SOM grid can be
+#'  different. 
+#'  To reproduce the same analysis, open the file Paper_results.RData
+#'  in directory data.
+#'  
 #'
 #' - Disclaimer:
 #' This program is free software: you can redistribute it and/or modify
@@ -43,6 +46,7 @@
 # install.packages('dplyr')
 # install.packages('rgdal')
 # install.packages('sp')
+# install.packages('magrittr')
 # devtools::install_github("e-sensing/sits")
 
 
